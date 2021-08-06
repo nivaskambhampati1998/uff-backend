@@ -1,12 +1,12 @@
 {
-  "name": "nodestarter",
+  "name": "uff-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "Tej Pratap",
+  "author": "backend-team",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
