@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // configure dotEnv
-dotEnv.config({path : '.config/.env'});
+dotEnv.config({path : './config.env'});
 const hostname = process.env.LOCAL_HOST_NAME;
 const port = process.env.LOCAL_PORT;
 
