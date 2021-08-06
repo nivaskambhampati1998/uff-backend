@@ -3,6 +3,7 @@ const morgan = require('morgan');
 
 //routes
 const blogRouter = require("./routes/blogRoute");
+const userRouter = require("./routes/userRouter");
 
 const app=express();
 app.use(express.json());
@@ -28,5 +29,6 @@ app.get('/',(req,res)=>{
 
 //all route files
 app.use('/app/v1/blogs',blogRouter);
+app.user('/app/v1/userRouter);
 
 module.exports = app;
