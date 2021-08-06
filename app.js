@@ -29,6 +29,5 @@ app.get('/',(req,res)=>{
 
 //all route files
 app.use('/app/v1/blogs',blogRouter);
-app.user('/app/v1/userRouter);
 
 module.exports = app;

@@ -13,4 +13,10 @@ router.route('/single/:id')
   .patch(blogController.updateSingleBlog)
   .delete(blogController.deleteSingleBlog);
 
+router.route('/register') 
+  .post(blogController.registerUser);
+router.route('/login')
+  .post(blogController.loginUser);
+router.get('/userinfo')
+  .get(blogController.getUser)
 module.exports = router;
