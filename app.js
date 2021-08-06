@@ -2,7 +2,8 @@ const express = require("express");
 const morgan = require('morgan');
 
 //routes
-const blogRouter = require("./routes/blogRoute");
+
+const productRouter = require("./routes/productRoute");
 
 const app=express();
 app.use(express.json());
@@ -23,10 +24,11 @@ app.use((req,res,next) =>{
 });
 
 app.get('/',(req,res)=>{
-  res.send("This is backend");
+  res.send("This is UFF backend");
 });
 
 //all route files
-app.use('/app/v1/blogs',blogRouter);
+
+app.use('/app/v1/products',productRouter);
 
 module.exports = app;
