@@ -29,14 +29,6 @@ mongoose.connect(process.env.MONGO_DB_URL, {
     process.exit(1);
 });
 
-// basic request
-app.get('/', (request , response) => {
-    response.send(`Welcome to User Authentication`);
-});
-
-// router configuration
-app.use('/api/users' , require('./router/userRouter'));
-
 app.listen(port, hostname, () => {
     console.log(`Express Server is started at http://${hostname}:${port}`);
 });
