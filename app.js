@@ -4,6 +4,7 @@ const morgan = require('morgan');
 //routes
 
 const productRouter = require("./routes/productRoute");
+const userRouter = require("./routes/userRoute");
 
 const app=express();
 app.use(express.json());
@@ -30,5 +31,6 @@ app.get('/',(req,res)=>{
 //all route files
 
 app.use('/app/v1/products',productRouter);
+app.use('/app/v1/users',userRouter);
 
 module.exports = app;
